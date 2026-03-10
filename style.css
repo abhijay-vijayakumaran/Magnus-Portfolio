@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Nunito Sans", sans-serif;
 }
 
 /* HEADER */
@@ -135,6 +136,7 @@ header {
     display: flex;
 }
 
+
 .magpara {
     margin: 30px;
     padding: 40px;
@@ -144,7 +146,8 @@ header {
     color: white;
 
 }
-.magpara:hover{
+
+.magpara:hover {
     transform: scale(1.05);
     transition: 1s ease-in-out;
 }
@@ -200,7 +203,8 @@ header {
     border-radius: 20px;
     border: 3px solid black;
 }
-.basinfo:hover{
+
+.basinfo:hover {
     transform: scale(1.01);
     transition: 1s ease;
     color: white;
@@ -274,7 +278,7 @@ header {
 
 }
 
-.row-achi:hover{
+.row-achi:hover {
     transform: scale(1.01);
     transition: 1s ease;
     color: white;
@@ -321,10 +325,11 @@ header {
     border: 2px solid black;
     border-radius: 10px;
 }
-.serve:hover{
+
+.serve:hover {
     transform: scale(1.1);
     transition: 1s ease;
-    
+
 }
 
 .serve img {
@@ -411,7 +416,8 @@ form {
     margin: 5px;
     border-radius: 20px;
 }
-.button1:hover{
+
+.button1:hover {
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
     cursor: pointer;
@@ -436,4 +442,240 @@ footer {
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
+}
+
+
+
+@media screen and (max-width:900px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* header */
+    #list1 {
+        display: flex;
+        justify-content: end;
+        padding-right: 20px;
+        padding-top: 23px;
+        gap: 15px;
+
+
+
+    }
+
+    .navlinks ul li a {
+        font-size: x-large;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    /* front */
+    #mag1 {
+        border: 5px solid rgb(0, 0, 0);
+        border-radius: 50px;
+        width: 250px;
+    }
+
+    #fname {
+        font-size: 45px;
+        color: rgb(0, 0, 0);
+    }
+
+    #proff {
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+    }
+
+    #proff2 {
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+    }
+
+    #fbutton {
+        margin-top: 20px;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: white;
+        color: black;
+        padding: 7px;
+        font-size: large;
+    }
+
+    /* About */
+    .content-about {
+        display: block;
+    }
+
+    #about {
+        width: 100%;
+        height: 2200px;
+        background-color: rgb(0, 0, 0);
+    }
+
+    /* Basic info */
+    #basihead {
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+        padding-top: 30px;
+
+    }
+
+    .basic-content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 50vh;
+
+
+    }
+
+    .basinfo {
+        display: block;
+        justify-content: center;
+        width: 150px;
+        height: 300px;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: xx-large;
+        padding: 10px;
+        border-radius: 20px;
+        border: 3px solid black;
+    }
+    /* Achievements */
+    #achieve {
+    width: 100%;
+    height: 1150px;
+    background-color: rgb(0, 0, 0);
+}
+
+    
+    .row-achi {
+    height: 215px;
+    width: 90%;
+    background-color: rgb(253, 253, 253);
+    color: black;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px 10px 0px 10px;
+
+}
+.achinfo {
+    width: 50%;
+    height: 1200px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 40px;
+    margin-top: 30px;
+    font-size: xx-large;
+    border: 2px solid white;
+    border-radius: 20px;
+
+}
+
+/* service */
+#serve-title {
+    text-align: center;
+    padding: 20px;
+    font-size: xx-large;
+}
+
+.serve {
+    margin: 20px;
+    height: 500px;
+    width: 200px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.serve img {
+    padding-top: 20px;
+    height: 80%;
+    width: 100%;
+}
+
+/* contact */
+#contact {
+    width: 100%;
+    height: 1800px;
+    background-color: rgb(163, 163, 163);
+    display: block;
+    justify-content: space-around;
+
+}
+
+.containfo {
+    width: 50%;
+    padding: 70px;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    margin-left: 50px;
+    border: 2px solid black;
+    margin: 50px;
+    margin-left: 120px;
+    margin-top: 20px;
+    
+    
+
+}
+
+.infoconta {
+    padding-top: 200px;
+    font-size: xx-large;
+
+}
+
+
+.feedback {
+    display: block;
+    justify-content: center;
+    margin: 100px 70px 70px 70px;
+
+}
+
+
+.feedback p {
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+    font-size: 35px;
+    color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+
+
+
+}
+
+form {
+    margin-top: 50px;
+    margin-right: 40px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.button1 {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    width: 103%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+
 }
