@@ -446,7 +446,7 @@ footer {
 
 
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:375px) {
 
     * {
         margin: 0;
@@ -454,38 +454,71 @@ footer {
     }
 
     /* header */
+
+    .navlogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin-top: 20px;
+        padding: 5px;
+    }
+
+    #logo {
+        width: 25px;
+    }
+
+    .navlogo h2 {
+        color: white;
+        font-size: small;
+    }
+
     #list1 {
         display: flex;
         justify-content: end;
-        padding-right: 20px;
-        padding-top: 23px;
-        gap: 15px;
+        padding-right: 10px;
+        padding-top: 25px;
+        gap: 5px;
 
 
 
     }
 
     .navlinks ul li a {
-        font-size: x-large;
+        font-size: large;
         text-decoration: none;
         color: white;
-        font-size: 20px;
+        font-size: 10px;
     }
 
     /* front */
+
+    #front {
+        width: 100%;
+        height: 400px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .front1{
+        padding: 10px;
+    }
+
     #mag1 {
         border: 5px solid rgb(0, 0, 0);
         border-radius: 50px;
-        width: 250px;
+        width: 150px;
     }
 
     #fname {
-        font-size: 45px;
+        font-size: 20px;
         color: rgb(0, 0, 0);
     }
 
     #proff {
-        font-size: 20px;
+        font-size: 15px;
         color: rgb(0, 0, 0);
     }
 
@@ -501,7 +534,8 @@ footer {
         background-color: white;
         color: black;
         padding: 7px;
-        font-size: large;
+        font-size: small;
+        ;
     }
 
     /* About */
@@ -511,16 +545,50 @@ footer {
 
     #about {
         width: 100%;
-        height: 2200px;
+        height: 1800px;
         background-color: rgb(0, 0, 0);
     }
+    .magpic{
+        width: 100px;
+    }
+
+    
+.magpara {
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    color: white;
+
+}
+
+.magpara:hover {
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+}
+
+#proftitle {
+    font-size: 30px;
+}
+
+#profdes {
+    text-align: justify;
+    margin-top: 50px;
+    padding: 20px;
+    font-size: large;
+    line-height: 30px;
+}
+
+
 
     /* Basic info */
     #basic {
-    width: 100%;
-    height: 900px;
-    background-color: rgb(255, 255, 255);
-}
+        width: 100%;
+        height: 450px;
+        background-color: rgb(255, 255, 255);
+    }
+
     #basihead {
         text-align: center;
         padding: 20px;
@@ -534,7 +602,7 @@ footer {
         justify-content: space-evenly;
         align-items: center;
         height: 50vh;
-    
+
 
 
     }
@@ -542,146 +610,186 @@ footer {
     .basinfo {
         display: block;
         justify-content: center;
-        width: 150px;
-        height: 300px;
+        width: 125px;
+    
         background-color: rgb(255, 255, 255);
         text-align: center;
-        font-size: xx-large;
+        font-size: large;
         padding: 10px;
         border-radius: 20px;
-        border: 3px solid black;
+        border: 2px solid black;
     }
+
     /* Achievements */
     #achieve {
-    width: 100%;
-    height: 1150px;
-    background-color: rgb(0, 0, 0);
-}
+        width: 100%;
+        height: 1150px;
+        background-color: rgb(0, 0, 0);
+    }
+    .achinfo {
+        width: 50%;
+        height: 1200px;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+        font-size:small;
+        border: 2px solid white;
+        border-radius: 20px;
 
-    
-    .row-achi {
-    height: 215px;
-    width: 90%;
-    background-color: rgb(253, 253, 253);
+        
+    }
+#achi-head {
+    font-size: 25px;
     color: black;
-    margin-top: 20px;
-    margin-left: 10px;
-    border: 2px solid black;
-    border-radius: 20px;
-    padding: 10px 10px 0px 10px;
-
-}
-.achinfo {
-    width: 50%;
-    height: 1200px;
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 40px;
-    margin-top: 30px;
-    font-size: xx-large;
-    border: 2px solid white;
-    border-radius: 20px;
-
 }
 
-/* service */
-#serve-title {
-    text-align: center;
-    padding: 20px;
-    font-size: xx-large;
-}
 
-.serve {
-    margin: 20px;
-    height: 500px;
-    width: 200px;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    border: 2px solid black;
-    border-radius: 10px;
-}
-.serve img {
-    padding-top: 20px;
-    height: 80%;
-    width: 100%;
-}
 
-/* contact */
-#contact {
-    width: 100%;
-    height: 1800px;
-    background-color: rgb(163, 163, 163);
-    display: block;
-    justify-content: space-around;
+    .row-achi {
+        height: 100px;
+        width: 90%;
+        background-color: rgb(253, 253, 253);
+        color: black;
+        margin-top: 20px;
+        margin-left: 10px;
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: 10px 0px 5px 0px;
 
-}
+    }
 
-.containfo {
-    width: 50%;
-    padding: 70px;
-    text-align: center;
-    display: block;
-    justify-content: center;
-    background-color: white;
-    color: rgb(0, 0, 0);
-    margin-left: 50px;
-    border: 2px solid black;
-    margin: 50px;
-    margin-left: 200px;
-    margin-top: 20px;
     
-    
-
-}
-
-.infoconta {
-    padding-top: 200px;
-    font-size: xx-large;
-
-}
-
-
-.feedback {
-    display: block;
-    justify-content: center;
-    margin: 100px 70px 70px 70px;
-
-}
-
-
-.feedback p {
-    text-align: center;
-    background-color: rgb(0, 0, 0);
-    padding: 15px;
-    font-size: 35px;
-    color: white;
-    border: 2px solid black;
-    border-radius: 20px;
-
-
-
-}
-
-form {
-    margin-top: 50px;
-    margin-right: 40px;
-}
-
-.input {
+    /* service */
+    #services {
     width: 100%;
-    padding: 10px;
-    margin: 5px;
+    height:400px;
+    background-color: rgb(255, 255, 255);
 }
 
-.button1 {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    width: 103%;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 20px;
+    #serve-title {
+        text-align: center;
+        padding: 20px;
+        font-size:x-large;
+    }
+    .gservice {
+    display: inline-flex;
+    justify-content: space-evenly;
 }
+
+
+    .serve {
+        height: 200px;
+        width: 100px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    .serve img {
+        padding-top: 20px;
+        height: 100px;
+        width: 100%;
+    }
+
+    /* contact */
+    #contact {
+        width: 100%;
+        height: 1150px;
+        background-color: rgb(163, 163, 163);
+        display: block;
+        justify-content: space-around;
+
+    }
+
+    .containfo {
+        width: 50%;
+        padding: 20px;
+        text-align: center;
+        display: block;
+        justify-content: center;
+        background-color: white;
+        color: rgb(0, 0, 0);
+        margin-left: 50px;
+        border: 2px solid black;
+        margin: 50px;
+        margin-left: 70px;
+        margin-top: 20px;
+
+
+
+    }
+
+    .infoconta {
+        padding-top: 50px;
+        font-size: small;
+
+    }
+
+
+    .feedback {
+        display: block;
+        justify-content: center;
+        margin: 100px 70px 70px 70px;
+
+    }
+
+
+    .feedback p {
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        padding: 15px;
+        font-size: 35px;
+        color: white;
+        border: 2px solid black;
+        border-radius: 20px;
+
+
+
+    }
+
+    form {
+        margin-top: 50px;
+        margin-right: 40px;
+    }
+
+    .input {
+        width: 100%;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .button1 {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        width: 103%;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 20px;
+        margin-left: 15px;
+    }
+
+    
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    border-top: 2px solid white;
+}
+
+.foot {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding: 5px;
+    font-size: large;
+}
+
+
 
 
 }
